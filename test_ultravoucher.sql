@@ -57,3 +57,10 @@ INSERT INTO `mst_user` VALUES (3, 'Irwan', 2);
 INSERT INTO `mst_user` VALUES (4, 'Arka', 3);
 
 SET FOREIGN_KEY_CHECKS = 1;
+
+
+
+/* Query Test Ultra Voucher  */
+
+Select mst_user.id, name, parent_name from mstuser
+left join mst_parent on mst_parent.id = mst_user.id
